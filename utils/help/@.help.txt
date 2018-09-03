@@ -1,0 +1,8 @@
+Syntax:
+  @ -h
+  @ [-p (period-of-time)] ... [command [args]]
+  @ [-t (point-in-time)] ... [command [args]]
+
+Description:
+  Waits the sum of the given periods plus the sum of the difference between now and each given point-in-time, then
+  executes command with all given args.

@@ -1,0 +1,15 @@
+Syntax:
+  deepest [-l|-p] (directory)
+
+Description:
+  Find the deepest (or joint-deepest) path in the given directory and print both
+  the path and its depth. This is the total number of path components, including
+  components given as part of directory, eg.
+    $ deepest ./tmp
+    Depth: 5
+    ./tmp/this/that/other
+
+Options:
+  -h, -?, --help    print this help message
+  -p, --path        only print the deepest (or joint-deepest) path
+  -l, --length      only print the length of the deepest path

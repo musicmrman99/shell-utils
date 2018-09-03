@@ -1,0 +1,29 @@
+Syntax:
+    anotify [-k|--keep-stdout] [-d|--disown-audio]
+            [-s|--source (source)]
+            [notification-header] [notification-body]
+
+Description:
+    anotify is a function which uses notify-send and plays the given set of one
+    or more audio files to notify the user about some event. All audio files of
+    the given set are played at the same time (or as fast as the commands can
+    run, at least).
+
+    -k, --keep-stdout
+        Don't discard stdout.
+
+    -d, --disown-audio
+        Fork the program that plays audio sounds. This will make all of the
+        sounds play concurrently and the notification display at the same time.
+
+    -s, --source (source)
+        Specify the set of audio files to paly.
+
+        The following sets are available:
+            'pidgin-send'    - uses pidgin's send audio file
+            'pidgin-receive' - uses pidgin's receive audio file
+            'pidgin'         - uses pidgin's send and recieve audio files
+
+            'danger'         - uses the danger audio file (in function data)
+            'warning'        - uses the warning audio file (in function data)
+            'notify'         - uses the notify audio file (in function data)            
