@@ -1,12 +1,12 @@
 # Utils
-My utility aliases and functions (BASH).
+My utility aliases and functions (for BASH).
 
 # Installation
 ## Under `bashctl`
 To use it under [`bashctl`](https://github.com/musicmrman99/bashctl "bashctl on GitHub") (recommended if you use `bashctl`):
 ```sh
 # Or whatever component you want to install it to
-git clone https://github.com/musicmrman99/utils.git "$BASH_LIB_COMPONENT_ROOT"/utils
+git clone https://github.com/musicmrman99/shell-utils.git "$BASH_LIB_COMPONENT_ROOT"/utils
 bashctl --update-symlinks
 ```
 ... then add the following to your `.bashrc`:
